@@ -1,0 +1,28 @@
+//FUNCTION
+/*
+KHối lệnk có thể tái sử dụng ở nhiều nơi trong dự án
+    - Ngắn hơn ()
+    - Dễ tối ưu bảo trì hơn
+    - Tổ chức code gọn gàng hơn ..
+*/
+/*
+ int : output type  bắt buộc có return về kiểu tương ứng
+ tinhTong : tên function(Phương thức - method) 
+ (int a, int b) : Tham số - được truyền vào function
+ {....}: xử lý tính toán 
+ return tong: có return là vì có từ khóa int ở đầu funtion
+*/
+int tinhTong(int x, int y) //nhập vào 2 số để tính tổng và trả ra đáp án
+{
+    //tính tổng 2 số
+    int tong = x + y;
+    // string text ="";
+    return tong;
+}
+//CÁCH SỬ DỤNG
+int a  = 10;
+int b = 5;
+int ketqua1 = tinhTong(a, b);
+int ketqua2 = tinhTong(5,3);
+Console.WriteLine($"Kết quả của {a} + {b} là:  {ketqua1}");
+Console.WriteLine($"Kết quả của 3 + 5 là:  {ketqua2}");
