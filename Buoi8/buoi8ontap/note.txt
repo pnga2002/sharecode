@@ -1,0 +1,56 @@
+
+class Program
+{
+
+    // khai báo list kèm giá trị 
+    static List<int> lstnumber = new List<int> { 20, 81, 97, 63, 72, 11, 20, 15, 33, 15, 41, 20 };
+    private static void Main(string[] args)
+    {
+        //1. Tổng các số lớn hơn 50
+        //viết 1 function ở method nhận vào danh sách trả ra tổng
+        // int kq1 = Method.TinhTongLonHon50(lstnumber);
+        int kq1 = Method.TinhTongLonHon50C2(lstnumber);
+        Console.WriteLine($"1 . Tổng các số lơn hơn 50 trong lstNumber là : {kq1}");
+        Console.WriteLine("_________________________");
+
+        //2.ĐẾM SỐ LƯỢNG PHẦN TỬ LỚN HƠN 30
+        // int kq2 = Method.DemSoLonHon30(lstnumber);
+        int kq2 = Method.DemSoLonHon30C2(lstnumber);
+        Console.WriteLine($"2 . Đếm số lượng phần tử lớn hơn 30 trong lstNumber là : {kq2}");
+        Console.WriteLine("_________________________");
+
+        //3. Tìm số lớn nhất trong danh sách
+        int kq3 = Method.DemSoLonHon30C2(lstnumber);
+        Console.WriteLine($"3 . Tìm số lớn nhất trong lstNumber là : {kq3}");
+        Console.WriteLine("_________________________");
+        
+        // 4. Tính trung bình cộng của các số lẻ
+        double kq4 = Method.TrungBinhCongSoLe(lstnumber);
+        double kq4c2 = Method.TrungBinhCongSoLeC2(lstnumber);
+        Console.WriteLine($"4.Trung bình các số lẻ trong lstNumber là : {kq4}");
+        Console.WriteLine($"4.Trung bình các số lẻ trong lstNumber là : {kq4c2}");
+        Console.WriteLine("_________________________");
+        //In ra các số chẵn trong danh sách
+        // lấy ra ds cách số chẳn -> in ra
+        Console.WriteLine("5. Danh sách các số chẳng trong lstNumber là: ");
+        string kq5 = Method.DanhSachSoChan(lstnumber);
+        List<int> kq5c2 = Method.DanhSachSoChanC2(lstnumber);
+        var k5c3 = Method.DanhSachSoChanC3(lstnumber);
+        Console.WriteLine($"5. Danh sách số chẳn trong lstNumber là : {kq5}");
+        Console.WriteLine($"5. Danh sách số chẳn trong lstNumber là : ");
+        kq5c2.ForEach(Console.WriteLine);
+        Console.WriteLine("_________________________");
+        // 6.
+         Console.WriteLine($"6. Tìm vị trí đầu tiên của số 20 trong danh sách : {Method.TimViTriDauTien(lstnumber)}");
+         Console.WriteLine($"7. Tìm số lượng phần tử bằng 15 trong danh sách : {Method.SoLuongPhanTuBang15(lstnumber)}");
+         Console.WriteLine($"8. Tính tổng các số nhỏ hơn 40 : {Method.TongBeHon40(lstnumber)}");
+         Console.WriteLine($"9. Đếm số lượng các số chia hết cho 5 : {Method.DemSoChiaHetCho5(lstnumber)}");
+         var kq10  =Method.DSNHoHon50(lstnumber);
+         Console.WriteLine($"10. Tạo danh sách mới chỉ chứa các số nhỏ hơn 50 : ");
+         kq10.ForEach(Console.WriteLine);
+       
+
+
+
+    }
+}

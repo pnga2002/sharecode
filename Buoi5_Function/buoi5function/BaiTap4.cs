@@ -30,6 +30,7 @@ class BaiTap4
 
     // Hello người đẹp 
     // 123450123450123
+    // 
     public static int LastIndexOf2(string chuoi)
     {
         mytext="";

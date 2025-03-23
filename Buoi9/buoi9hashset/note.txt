@@ -1,0 +1,118 @@
+//HASHSET
+// nó giống list nhưng không có vị trí và trông có giá trị trùng nhau
+//Khai báo
+HashSet<int> hashSet = new HashSet<int>(); // hashset rỗng
+//khai báo kèm giá trị
+HashSet<string> hashSet1  = new HashSet<string>{"Phú","Huỳnh","Thanh"}; // hashset có giá trị
+
+//Tương tự List, dict thì cũng có Thêm , Xoá, và Đọc(duyệt)
+//ADD
+hashSet.Add(2);
+hashSet.Add(5);
+// thêm số 2 vào 1 lần nữa,
+hashSet.Add(2); 
+// 1 là 2, 5 
+// 2 : có thể báo lỗi
+// 2 và 5
+//Dọc 
+// in ra giá trị của hashset
+Console.WriteLine("\nSau Khi Thêm");
+foreach(int a in hashSet){
+    Console.Write(a +" ");
+}
+
+//Xoá
+hashSet.Remove(2); // xoá số 2 ra khỏi hashset
+Console.WriteLine("\nSau khi xoá số 2");
+foreach(int a in hashSet){
+    Console.Write(a +" ");
+}
+//Xoá hết: clear
+hashSet.Clear();// xoa het tat car trong hashset
+Console.WriteLine("\nSau khi xoá hết");
+foreach(int a in hashSet){
+    Console.Write(a +" ");
+}
+
+//kiểm tra rỗng
+Console.WriteLine(hashSet.Count==0);
+
+// kiểm tra tồn tại
+bool checkName = hashSet1.Contains("Phi");
+string find = checkName?"Có":"không";
+Console.WriteLine($"kiểm tra Phú có trong hashset1 hay không: {find}");
+// viết 1 function để loại bỏ tiếng việt ra khỏi phú -> phu 
+
+// tìm xem có Phú hay không  có thì xoá phú và thêm phi vào
+if(hashSet1.Contains("Phú")){
+    // có phú thì xoá 
+    hashSet1.Remove("Phú");
+    //thêm người khác, 
+    hashSet1.Add("Như");
+}
+// a o u i e  và > 5 dấu
+Console.WriteLine("\nSau khi xoá phú");
+foreach(string a in hashSet1){
+    Console.Write(a +" ");
+}
+
+//gộp 2 hashset vào làm 1 : UnionWith: hashset1.UnionWith(hashset2) Gom cái 2 vào cái 1 , làm thay đổi giá trị của hashset1
+HashSet<string> hashSet2  = new HashSet<string>{"Vương","Phi","Long","Huỳnh","Thanh"}; // hashset có giá trị
+hashSet1.UnionWith(hashSet2);
+// gom vào hashset1 và hashset2 vẫn giữ nguyên
+Console.WriteLine("\nSau khi gộp ");
+foreach(string a in hashSet2){
+    Console.Write(a +" ");
+}
+
+//CHUYỂN ĐỔI
+//1.  List -> Dictionnary
+List<string> lst1 = new List<string>{"Vương","Phi","Long","Huỳnh"};
+//                                     0       1      2      3
+// chuyển sang dict với  {vị trí, giá trị của list[vị trí]}
+ Dictionary<int, string> dict1 = lst1.ToDictionary(x => lst1.IndexOf(x),x=>x);
+ // x : chạy lần lựợt qua từng phần tử list
+ //lst.indexOf(x) : lấy ra vị trí để làm key cho dictionary
+ //x=>x: lấy giá trị tại x làm value cho dictionary
+Console.WriteLine("Your text here");
+// in ra các giá trị của dict
+foreach(string a in dict1.Values){
+    Console.WriteLine(a);
+}
+
+
+// 2. Dictionary -> List : 
+// chuyển tất cả key của dict về list<kieu_duLieu_key>
+List<int> lstKey = dict1.Keys.ToList();
+lstKey.ForEach(Console.WriteLine);
+// chuyển tất cả value của dict về list<kieu_duLieu_value>
+List<string> lstValue = dict1.Values.ToList();
+lstValue.ForEach(Console.WriteLine);
+// list<Key,value>
+List<KeyValuePair<int , string>> lstKeyValue= dict1.ToList();
+// [ {0,"Vương"},{1, "Phi"},...]
+
+
+//3. hashset => list
+List<int> lst3 = new List<int>{1,3,5,7,9,3,5};
+HashSet<int> hs3 = new HashSet<int>(lst3); // {1,3,5,7,9}
+//4 list => hashset
+List<int> lst4 = hs3.ToList();
+
+//5 DIctionary -> hashset 
+// tuong tự cho cả values và keys
+Dictionary<int, string> dct5 = new Dictionary<int, string>{
+    {1,"dotnet01"},
+    {2,"dotnet02"},
+    {3,"dotnet03"},
+};
+// values
+HashSet<string> hs5 = new HashSet<string>(dct5.Values); // dotnet01,dotnet02,dotnet03
+//không có vị trí,
+
+// keys tương tự
+
+//6. HashSet về Dictionnary
+Dictionary<string, int> dct6 = hs5.Select((name, index)=> new {name,index})
+.ToDictionary( x=>x.name,x=>x.index);
+//hs5.Select((name, index)=> new {name,index}): Lấy ra tương tự như list => chuyển về dict

@@ -53,11 +53,44 @@
         #endregion
 
         #region BT4
-        Console.WriteLine("Nhập vào chuỗi: ");
-        string input = Console.ReadLine();
-        Console.WriteLine($"cách dùng phương thức của chuỗi: {BaiTap4.LenghtOfLast(input)}");
-        Console.WriteLine($"cách dùng giải thuật: {BaiTap4.LastIndexOf2(input)}");
-        
+        // Console.WriteLine("Nhập vào chuỗi: ");
+        // string input = Console.ReadLine();
+        // Console.WriteLine($"cách dùng phương thức của chuỗi: {BaiTap4.LenghtOfLast(input)}");
+        // Console.WriteLine($"cách dùng giải thuật: {BaiTap4.LastIndexOf2(input)}");
+
+        #endregion
+        #region BT5
+        // Console.WriteLine("Nhập vào chuỗi: ");
+        // string input = Console.ReadLine();
+        // Console.WriteLine(BaiTap5.DaoNguoc(input));
+        #endregion
+
+        #region  Lambda
+        // Console.WriteLine($"Bình phương:  {LambdaFunction.binhPhuong2(5)}");
+        // Console.WriteLine($"Tổng:  {LambdaFunction.tinhTong(5,9)}");
+
+        // // action 
+        // LambdaFunction.chao("Nguyễn Pin");
+        // LambdaFunction.chao2("Fei Fei");
+        #endregion
+
+
+        #region Callback function
+        static void inKetQua(double kq)
+        {
+            Console.WriteLine($"Kết quả là : {kq}");
+        }
+        CallbackFunction.XuLyKetQua(9, inKetQua);
+
+
+        // function callback nhận vào số và return vè bình phương số đó
+         static int BinhPhuong2(int a){
+            return a*a;
+         }
+
+         //Gọi hàm XuLy2(số, function)
+        int kq = CallbackFunction.XuLy2(7,BinhPhuong2);
+        Console.WriteLine($"Kêt quả cảu callback là function có return: {kq}");
         #endregion
     }
 }

@@ -1,0 +1,99 @@
+class Program
+{
+    public static void Main(string[] args)
+    {
+
+
+
+        //DICTIONARY : 
+        //danh sách chưa các cặp giá trị dạng key - value
+        // mỗi địa chỉ thì nó 1 cái nhà
+        //địa chỉ chính là key , và cái nhà là value
+        //mỗi key sẽ có 1 value
+        // CÚ PHÁP KHAI BÁO
+        // Dictionary<kieu_du_lieu_key,kieu_du_lieu_value> tendict = new Dictionary<kieu_du_lieu_key,kieu_du_lieu_value>();
+        //kieu_du_lieu_key: kiểu dữ liệu của key
+        //kieu_du_lieu_value: kiểu dữ liệu của value
+
+        Dictionary<string, string> dictHouses = new Dictionary<string, string>();
+        // Khai báo dict rỗng 
+
+        //Thêm phần tử vào dict
+        //Tương tự list
+        dictHouses.Add("112CT", "Trung tam tieng anh");
+
+        // (READ) in dict
+        foreach (var a in dictHouses)
+        {
+            Console.Write(a.Key + "-");
+            Console.WriteLine(a.Value);
+        }
+        // dictHouses.Add("112CT","CyberSoft"); // bao looix do key 112CT đã tồn taị rồi
+        //Update dict[key] = value mới;
+        dictHouses["112CT"] = "CyberSoft";
+
+        // lấy ra value của key cụ thể
+        Console.WriteLine($"Giá trị value của 112CT: {dictHouses["112CT"]}");
+        //
+        dictHouses.Add("124DBP", "CyberSoft quận 1");
+        dictHouses.Add("SVH", "CyberSoft quận 10");
+        dictHouses.Add("Thủ đức", "CyberSoft Thủ đức");
+        dictHouses.Add("Thủ đức 2", "CyberSoft Thủ đức");
+
+        //xoá cặp key-value trong dict
+        dictHouses.Remove("SVH");
+        Console.WriteLine("DICT SAU KHI REMOVE");
+        foreach (var a in dictHouses)
+        {
+            Console.Write(a.Key + "-");
+            Console.WriteLine(a.Value);
+        }
+
+        //kiểm tra xem key có tồn tại hay không : ContainsKey
+        if (dictHouses.ContainsKey("SVH"))
+        {
+            Console.WriteLine($"Có chi nhánh SVH : {dictHouses["SVH"]}");
+        }
+        else
+        {
+            Console.WriteLine("Không có chi nhánh sư vạn hạnh");
+        }
+        // ContainsValue: kiểm tra value có tồn tại hay không
+        if (dictHouses.ContainsValue("CyberSoft Thủ đức"))
+        {
+            Console.WriteLine($"Có chi nhánh ");
+        }
+        else
+        {
+            Console.WriteLine("Không có chi nhánh");
+        }
+
+
+        // lấy tất cả value chuyển thành LIST<kieu_du_lieu_tuong_ung>
+        //List<string> lstValue = ["cybersoft","cybersoft thủ đức",......]
+        var lstValue = dictHouses.Values.ToList();
+        lstValue.ForEach(Console.WriteLine);
+        // Tương tự có chuyển tất cả key -> list<kieu_du_lieu_tuong_ung>
+        var lstKey = dictHouses.Keys.ToList();
+        lstKey.ForEach(Console.WriteLine);
+    }
+}
+
+// REVIEW BUỔI 8
+/*
+- dictionary
+     khai báo
+        
+        thêm phần tử: ADD(_key,_value)
+        in ra: foreach
+        update: dict[key] = value mới
+        remove: dict.Remove(key)
+        containsKey: kiểm tra key có tồn tại hay không: dict.ContainsKey(_key)
+        containsValue:  kiểm tra value có tồn tại hay không: dict.ContainsValue(_value)
+        lấy ra tất cả value -> list: dict.Values.ToList()
+        lấy ra tất cả key -> list: dict.Keys.ToList()
+        
+//Hôm nay học về hashset, và aray
+
+*/
+     
