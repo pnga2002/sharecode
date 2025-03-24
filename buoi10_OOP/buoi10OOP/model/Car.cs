@@ -15,6 +15,11 @@ public class Car{
         // nếu key = CYBERTRUCK thì 
         // thì log ra tiếng khởi động xe 
         // không thì hú cảnh báo trộm
+        if(key == "CYBERTRUCK"){
+            Console.WriteLine("Xe đã khởi động");
+        }else{
+            Console.WriteLine("Cảnh báo trộm");
+        }
     }
 
 }
