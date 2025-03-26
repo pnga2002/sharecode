@@ -1,7 +1,7 @@
 class Method
 {
     //1. Tính tổng các cố lớn hơn 50
-    public static int TinhTongLonHon50(List<int> lst)
+    public int TinhTongLonHon50(List<int> lst)
     {
         int kq = 0;
         // tông các số lớn hơn 50 

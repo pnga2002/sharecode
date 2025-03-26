@@ -5,6 +5,8 @@ public class Car{
     public string Ten;
     public double Gia;
     public string ThuongHieu;
+    // private string Key;
+    protected string Key;
 
     // Hành Vi / Phương thức // hàm 
     public void KenXe(){ // là 1 function không nhận tham số
@@ -15,6 +17,9 @@ public class Car{
         // nếu key = CYBERTRUCK thì 
         // thì log ra tiếng khởi động xe 
         // không thì hú cảnh báo trộm
+        if(key == Key){
+            
+        }
     }
 
 }
