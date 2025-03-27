@@ -1,0 +1,15 @@
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/bin/Debug/net8.0/test
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/bin/Debug/net8.0/test.deps.json
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/bin/Debug/net8.0/test.runtimeconfig.json
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/bin/Debug/net8.0/test.dll
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/bin/Debug/net8.0/test.pdb
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/obj/Debug/net8.0/test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/obj/Debug/net8.0/test.AssemblyInfoInputs.cache
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/obj/Debug/net8.0/test.AssemblyInfo.cs
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/obj/Debug/net8.0/test.csproj.CoreCompileInputs.cache
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/obj/Debug/net8.0/test.sourcelink.json
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/obj/Debug/net8.0/test.dll
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/obj/Debug/net8.0/refint/test.dll
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/obj/Debug/net8.0/test.pdb
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/obj/Debug/net8.0/test.genruntimeconfig.cache
+/Users/phuongnga/Documents/Dotnet03/sharecode/test/test/obj/Debug/net8.0/ref/test.dll

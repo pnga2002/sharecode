@@ -1,0 +1,15 @@
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/bin/Debug/net8.0/buoi11OOP
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/bin/Debug/net8.0/buoi11OOP.deps.json
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/bin/Debug/net8.0/buoi11OOP.runtimeconfig.json
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/bin/Debug/net8.0/buoi11OOP.dll
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/bin/Debug/net8.0/buoi11OOP.pdb
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/obj/Debug/net8.0/buoi11OOP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/obj/Debug/net8.0/buoi11OOP.AssemblyInfoInputs.cache
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/obj/Debug/net8.0/buoi11OOP.AssemblyInfo.cs
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/obj/Debug/net8.0/buoi11OOP.csproj.CoreCompileInputs.cache
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/obj/Debug/net8.0/buoi11OOP.sourcelink.json
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/obj/Debug/net8.0/buoi11OOP.dll
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/obj/Debug/net8.0/refint/buoi11OOP.dll
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/obj/Debug/net8.0/buoi11OOP.pdb
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/obj/Debug/net8.0/buoi11OOP.genruntimeconfig.cache
+/Users/phuongnga/Documents/Dotnet03/sharecode/buoi11/buoi11OOP/obj/Debug/net8.0/ref/buoi11OOP.dll
