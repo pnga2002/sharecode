@@ -1,7 +1,6 @@
 public class Task
 {
     // quản lý tưng đối tượng
-    // Thuộc tính
     public string Ten;
     public bool TrangThai;  // chỉ có pending và done : bool
                             // new ,pending, done, cancel,
@@ -20,7 +19,4 @@ public class Task
         string status = TrangThai ? "Done" : "Pending";
         Console.WriteLine($"{i} : {Ten} - {status}");
     }
-
-
-
 }

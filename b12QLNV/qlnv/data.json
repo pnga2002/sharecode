@@ -1,0 +1,26 @@
+﻿[
+  {
+    "MaNV": 3,
+    "TenNV": "Khoi",
+    "Luong1h": 3,
+    "SoGioLam": 3
+  },
+  {
+    "MaNV": 4,
+    "TenNV": "Nga",
+    "Luong1h": 2,
+    "SoGioLam": 2
+  },
+  {
+    "MaNV": 5,
+    "TenNV": "Phi",
+    "Luong1h": 4,
+    "SoGioLam": 4
+  },
+  {
+    "MaNV": 6,
+    "TenNV": "Nh\u01B0",
+    "Luong1h": 7,
+    "SoGioLam": 7
+  }
+]

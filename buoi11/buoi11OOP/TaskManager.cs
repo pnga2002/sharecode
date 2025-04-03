@@ -1,6 +1,7 @@
 public class TaskManager
 {
     // list
+    // thuộc tính lst : chứa danh sách Task
     private List<Task> lst = new List<Task>();// khởi tạo 1 danh sách Task rỗng 
 
     // 3 function
@@ -11,6 +12,7 @@ public class TaskManager
     // b1: nhập tên task
     // b2: tạo Task bằng contructor
     // b3: lst  thêm task vừa tạo vào
+    // 3 phương thức
     public void Add()
     {
         Console.WriteLine("________________");
