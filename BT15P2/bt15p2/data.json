@@ -1,0 +1,11 @@
+[
+  {
+    "Loai": "ThoiTrang",
+    "MaSanPham": 1,
+    "TenSanPham": "\u00E1o",
+    "GiaGoc": 100,
+    "Thue": null,
+    "PhiVanChuyen": null,
+    "GiamGiaTheoMua": 10
+  }
+]

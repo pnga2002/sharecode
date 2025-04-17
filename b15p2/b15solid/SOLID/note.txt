@@ -1,0 +1,20 @@
+SOLID
+- S: nguyên tắc trách nhiệm đơn lẻ
+Một class chỉ nên chịu trách nhiệm cho 1 việc Duy nhất
+   -> quá nhiều service để sử lý 
+   -> gom những cái service liên quan lại vào 1 Facade pattern (service lớn hơn để dễ quản lý) 
+   VD : NHÓM service liên quan đến NhanVien vào 1 Facade Pattern
+- O: nguyên tắc đóng mở
+    Có thể mở rộng nhưng không thay đổi (KHÔNG THAY ĐỔI CODE CỦA CLASS GỐC)
+    - Mở rộng:  ghi đè , thêm phương thức
+    - thay đổi: vào class cha sửa code 
+- L: Giống như kế thừa bình thường
+        - Giống : class con có thể overide bth, nhưng cấm thay dôi
+        - Khác: không được làm sai lệch tính đnsg đăn của class cha, làm lệch hành vi .VD : đà điểu bay :v
+- I: Định nghĩa: Các client không nên bị buộc phải thực hiện các interface mà họ không sử dụng. Điều này có nghĩa là nên tách các interface lớn thành
+các interface nhỏ, cụ thể hơn.
+- D: Đảo ngược sự phụ thuộc
+    - Khi thay đổi service phụ thì không làm ảnh hưởng đến logic của ser chính
+    - không khởi tạo service phụ trong service
+    - khởi tạo bên ngoài và truyền vô (contructor injection) 
+    - Code cấp cap(Service chính) không bị gắn chặt vào code cấp thấp(Sẻvice phụ)

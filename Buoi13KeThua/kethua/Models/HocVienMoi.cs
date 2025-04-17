@@ -9,5 +9,9 @@ public class HocVienMoi : HocVien{ // có đầy đủ thuộc tính và phươn
    public void NopTien(){
     Console.WriteLine("Nôp tiền thành công!");
    }
+
+   // public override void ShowInfor(){
+
+   // }
     
 }
